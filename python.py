@@ -1,7 +1,7 @@
-""" semple Script for axtracting Data from a Webpage 
-This script allows the user to exact data from a webapge and then export the data to a csv file with colum(s).
+""" sample Script for axtracting Data from a Webpage 
+This script allows the user to exact data from a webapge and then export the data to a csv file with column(s).
 """
-# librairies
+# libraries
 import urllib.request
 from bs4 import BeautifulSoup
 import csv
