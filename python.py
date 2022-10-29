@@ -25,3 +25,9 @@ text2 = parse.find_all('p', attrs={'class': 'css-hjukut'})
 soup = bs4(content, 'html.parser')
 print(soup.title)
 print(soup.title.name)
+
+#finding elements by id or by class
+s = soup.find('div', class='css-5pe77f')
+soupContentClass = s.find_all('p')
+soupContentId = s.find('div', id='css-5zg4y9')
+print(f`${soupContentClass:} {soupContentId:}`)
