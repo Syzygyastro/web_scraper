@@ -57,3 +57,11 @@ for image in images:
      
 for image in images_list:
     print(image)
+
+#extract contact info from footer
+leftbar = s.find('ul', class_='.css-13o0c9t')
+ 
+# All the li under the above ul
+content = leftbar.find_all('li')
+ 
+print(content)
