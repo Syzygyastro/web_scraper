@@ -20,3 +20,8 @@ text2 = parse.find_all('p', attrs={'class': 'css-hjukut'})
   writer.writerow(['Title','Author'])
   for col1,col2 in zip(text1, text2):
     writer.writerow([col1.get_text().strip(), col2.get_text().strip()])
+
+# parsing html using BeautifulSoup
+soup = bs4(content, 'html.parser')
+print(soup.title)
+print(soup.title.name)
