@@ -27,7 +27,16 @@ print(soup.title)
 print(soup.title.name)
 
 #finding elements by id or by class
-s = soup.find('div', class='css-5pe77f')
+s = soup.find('div', class_='css-5pe77f')
 soupContentClass = s.find_all('p')
 soupContentId = s.find('div', id='css-5zg4y9')
 print(f`${soupContentClass:} {soupContentId:}`)
+
+
+#extracting text from tags
+s = soup.find('div', class_='css-1dv1kvn')
+ 
+lines = s.find_all('h2')
+ 
+for line in lines:
+    print(line.text)
