@@ -40,3 +40,8 @@ lines = s.find_all('h2')
  
 for line in lines:
     print(line.text)
+
+#extract href links
+# find all the anchor tags with "href"
+for link in soup.find_all('a'):
+    print(link.get('href'))
